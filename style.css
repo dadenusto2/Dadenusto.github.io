@@ -78,7 +78,6 @@ footer{
     color: rgb(71, 50, 148);
     font-size: 18px;
     margin:0 auto;
-    order:3;
 }
 @media (min-device-width: 480px){
      .container{
@@ -97,6 +96,10 @@ footer{
     }
     #Form{
         order: 3;
+
+    }
+    Footer{
+        order:4
         background-color: rgb(175, 179, 140);
         color: rgb(71, 50, 148);
     }
