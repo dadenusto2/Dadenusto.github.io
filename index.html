@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href = "style.css">
+    <link rel="stylesheet" href = "Задание2.css">
     <title>Задание 2</title>
   </head>
   
@@ -17,9 +17,9 @@
       </div>
     </header>
 
-    <div class="all">
-      <nav>
-        <ul id="menu">
+    <nav class="all" id="menu">
+      <div>
+        <ul>
           <li>
             <a href="#Hyperlink">Гиперссылки</a>
           </li>
@@ -30,9 +30,10 @@
             <a href="#Form">Форма</a>
           </li>
         </ul>
-      </nav>
-
-      <a id="Hyperlink" class="container"><h2>Гиперссылки</h2></a>
+      </div>
+    </nav>
+    <div class="all" id="Hyperlink">
+      <h2>Гиперссылки</h2>
       <ol>
         <li><a href="https://www.youtube.com">Ссылка на главную страницу Youtube.com</a></li>
         <li><a href="https://vk.com">Ссылка на главную страницу vk.com в протоколе https</a></li>
@@ -68,9 +69,9 @@
         <li><a href="/">Сокращенная ссылка на главную</a></li>
         <li><a href="firstWEB.html">Сокращенная ссылка на внутренюю</a></li>
       </ol>
-
-      <a id="Table"><h2>Таблица</h2></a>
-      <div class="container">
+    </div>
+    <div class="all" id="Table">
+      <h2>Таблица</h2>
         <table>
           <tr>
             <th></th>
@@ -128,10 +129,11 @@
               4.1+4.2+4.3
             </th>
           </tr>
+        </div>
         </table>
-      </div>
-
-      <a id="Form"><h2>Форма</h2></a>
+      
+      <div class="all" id="Form">
+      <h2>Форма</h2>
       <form method="POST">
         <input type="text" name="Имя" value="Имя"><br/>
         <input type="email" name="email" value="test@example.com"><br/>
@@ -165,13 +167,11 @@
         </label><br/>
         <input type="submit" value="Отправить" class="submit"/>        
       </form>
-    </div>
-
+  </div>
     <footer>
-      <div class="container">
+      <div class="all">
         Задизайнено студией Евгения Хижнего
       </div>
     </footer>
-
   </body>
 </html>
