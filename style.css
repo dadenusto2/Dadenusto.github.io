@@ -7,6 +7,10 @@ body{
     font-family: "Times New Roman", Times, serif, sans-serif;
     background-color: rgba(104, 175, 192, 0.493);
 }
+.all{
+    width: 100%;
+    clear: both;
+}
 .container{
     width: 960px;
     margin: 0 auto;
@@ -42,8 +46,16 @@ header span{
     display: block;
     padding: 5px 77px;
 }
+#Table{
+    flex: 1;
+    order:2;   
+}
 table{
     border-collapse: separate;
+}
+#Form{
+    flex: 1;
+    order:1;
 }
 table tr,th{
     border: 3px solid rgb(244, 96, 237);
@@ -64,6 +76,7 @@ footer{
     background-color: rgb(175, 179, 140);
     color: rgb(71, 50, 148);
     font-size: 18px;
+    order:3;
 }
 @media (min-device-width: 480px){
     #navigation li{
@@ -72,11 +85,5 @@ footer{
     .all{
         width: 960px;
         margin: 0 auto;
-    }
-    #tabl{
-        order: 1;
-    }
-    #form{
-        order: 2;
     }
 }
