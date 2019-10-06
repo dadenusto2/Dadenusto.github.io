@@ -7,7 +7,7 @@ body{
     font-family: "Times New Roman", Times, serif, sans-serif;
     background-color: rgba(104, 175, 192, 0.493);
 }
-.all{
+.container{
     width: 100%;
     clear: both;
 }
@@ -77,12 +77,12 @@ footer{
     order:3;
 }
 @media (min-device-width: 480px){
-    #menu li{
-        display: inline-block;
-    }
-    .all{
+     .container{
         width: 960px;
         margin: 0 auto;
+    }
+    #menu li{
+        display: inline-block;
     }
     #Table{
         order: 1;
