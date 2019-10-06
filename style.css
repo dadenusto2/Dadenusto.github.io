@@ -45,14 +45,14 @@ header span{
 }
 #Form{
     flex: 1;
-    order: 1;
+    order: 2;
 }
 table{
     border-collapse: separate;
 }
 #Table{
     flex: 1;
-    order: 2;   
+    order: 1;   
 }
 table tr,th{
     border: 3px solid rgb(244, 96, 237);
@@ -67,10 +67,6 @@ table tr:nth-child(even){/*Нечетные строки*/
     color: yellow;
     background-color: green;
 }
-#Footer{
-    flex: 1;
-    order: 3;  
-}
 footer{
     width: 100%;
     margin: 0%;
@@ -78,29 +74,20 @@ footer{
     color: rgb(71, 50, 148);
     font-size: 18px;
     margin:0 auto;
+    order: 3;
 }
 @media (min-device-width: 480px){
-     .container{
+    .container{
         width: 960px;
         margin: 0 auto;
-    }
-    #menu{
-        order: 1;
-        background-color: rgba(111, 168, 146, 0.822);
     }
     #menu li{
         display: inline-block;
     }
     #Table{
-        order: 2;
+        order: 1;
     }
     #Form{
-        order: 3;
-
-    }
-    Footer{
-        order:4
-        background-color: rgb(175, 179, 140);
-        color: rgb(71, 50, 148);
+        order: 2;
     }
 }
