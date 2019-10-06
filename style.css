@@ -11,10 +11,6 @@ body{
     width: 100%;
     clear: both;
 }
-.container{
-    width: 960px;
-    margin: 0 auto;
-}
 header{
     background-color: rgb(194, 148, 148);
     color: rgb(255, 245, 155);
@@ -32,6 +28,7 @@ header span{
 #menu{
     width: 960px;
     padding: 0;
+    text-align: center;
     margin: auto;
     display: block;
     font-size: 30px;
@@ -39,23 +36,23 @@ header span{
     background-color: rgba(137, 168, 111, 0.822);
 }
 #menu li{
-    display: inline-block;
+    list-style-type: none;
 }
 #menu li a{
     color: cornsilk;
     display: block;
     padding: 5px 77px;
 }
-#Table{
+#Form{
     flex: 1;
-    order:2;   
+    order: 1;
 }
 table{
     border-collapse: separate;
 }
-#Form{
+#Table{
     flex: 1;
-    order:1;
+    order:2;   
 }
 table tr,th{
     border: 3px solid rgb(244, 96, 237);
@@ -76,14 +73,21 @@ footer{
     background-color: rgb(175, 179, 140);
     color: rgb(71, 50, 148);
     font-size: 18px;
+    margin:0 auto;
     order:3;
 }
 @media (min-device-width: 480px){
-    #navigation li{
+    #menu li{
         display: inline-block;
     }
     .all{
         width: 960px;
         margin: 0 auto;
+    }
+    #Table{
+        order: 1;
+    }
+    #Form{
+        order: 2;
     }
 }
