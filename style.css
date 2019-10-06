@@ -34,6 +34,7 @@ header span{
     font-size: 30px;
     font-variant: small-caps;
     background-color: rgba(137, 168, 111, 0.822);
+    order: 1;
 }
 #menu li{
     list-style-type: none;
@@ -82,15 +83,21 @@ footer{
         margin: 0 auto;
     }
     #menu{
+        order: 1;
         background-color: rgba(111, 168, 146, 0.822);
     }
     #menu li{
         display: inline-block;
     }
     #Table{
-        order: 1;
+        order: 2;
     }
     #Form{
-        order: 2;
+        order: 3;
+    }
+    footer{
+        order: 4;
+        background-color: rgb(157, 140, 179);
+        color: rgb(148, 50, 74);
     }
 }
