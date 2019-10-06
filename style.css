@@ -34,7 +34,6 @@ header span{
     font-size: 30px;
     font-variant: small-caps;
     background-color: rgba(137, 168, 111, 0.822);
-    order: 1;
 }
 #menu li{
     list-style-type: none;
@@ -53,7 +52,7 @@ table{
 }
 #Table{
     flex: 1;
-    order:2;   
+    order: 2;   
 }
 table tr,th{
     border: 3px solid rgb(244, 96, 237);
@@ -67,6 +66,10 @@ table tr:nth-child(odd){/*Четные строки*/
 table tr:nth-child(even){/*Нечетные строки*/
     color: yellow;
     background-color: green;
+}
+#Footer{
+    flex: 1;
+    order: 3;  
 }
 footer{
     width: 100%;
@@ -94,10 +97,7 @@ footer{
     }
     #Form{
         order: 3;
-    }
-    footer{
-        order: 4;
-        background-color: rgb(157, 140, 179);
-        color: rgb(148, 50, 74);
+        background-color: rgb(175, 179, 140);
+        color: rgb(71, 50, 148);
     }
 }
