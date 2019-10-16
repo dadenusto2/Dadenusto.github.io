@@ -1,60 +1,42 @@
 body{
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
     outline: none;
-    font-family: "Times New Roman", Times, serif, sans-serif;
-    background-color: rgba(104, 175, 192, 0.493);
-}
-.container{
-    width: 100%;
-    clear: both;
+    font-family: Andale Mono, monospace;
+    background-color: #00AF64;
 }
 header{
-    padding: 0;
-    background-color: rgb(194, 148, 148);
-    color: rgb(255, 245, 155);
+    background-color: #007241;
+    font-family: Bradley Hand, cursive;
+    font-size: 30px;
+    color:rgb(206, 168, 44);
     height: 100px;
 }
-header #image{
-    float: left;
-    margin-right: 12px;
+header div a{
+    font-size:40px;
 }
-header span{
-    font-size: 40px;
-    font-style: italic;
-    width: 100%;
+#image{
+    float:left;
 }
 #menu{
-    width: 960px;
-    padding: 0;
-    text-align: center;
-    margin: auto;
-    display: block;
     font-size: 30px;
-    font-variant: small-caps;
-    background-color: rgba(137, 168, 111, 0.822);
 }
-#menu li{
-    list-style-type: none;
+#menu div div a{
+    color: #FFD240;
 }
-#menu li a{
-    color: cornsilk;
-    display: block;
-    padding: 5px 77px;
+#menu div div a:hover{
+    color: rgb(218, 106, 106);
 }
-#Form{
-    flex: 1;
-    order: 2;
+#Hyperlink a{
+    text-decoration: underline;
+    color: rgb(92, 92, 92);
+}
+#Hyperlink a:hover{
+    color: rgb(66, 126, 84);
+}
+#Hyperlink, #Form, #Table {
+    background-color: rgb(220, 185, 240);
 }
 table{
-
     border-collapse: separate;
-}
-#Table{
-    flex: 1;
-    order: 1;   
 }
 table tr,th{
     border: 3px solid rgb(244, 96, 237);
@@ -72,24 +54,9 @@ table tr:nth-child(even){/*Нечетные строки*/
 footer{
     width: 100%;
     margin: 0%;
-    background-color: rgb(175, 179, 140);
-    color: rgb(71, 50, 148);
+    background-color: rgb(136, 199, 168);
+    color: rgb(80, 74, 51);
     font-size: 18px;
     margin:0 auto;
     order: 3;
-}
-@media (min-device-width: 480px){
-    .container{
-        width: 960px;
-        margin: 0 auto;
-    }
-    #menu li{
-        display: inline-block;
-    }
-    #Table{
-        order: 1;
-    }
-    #Form{
-        order: 2;
-    }
 }
