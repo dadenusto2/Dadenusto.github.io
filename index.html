@@ -6,25 +6,27 @@
     <meta name="viewport" content="width=device-wedth,initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href = "style.css">
+    <script src="my.js"></script>
     <title>Задание 4</title>
   </head>
   
   <body class="p-0 m-0">
     <header class="container-fluid p-0 m-0">
       <div class="container">
-        <img id="image" src="image.png" alt="image">
+        <img id="image" src="image.png" width="100" height="100" alt="image">
         <span>
-         Мой сайт
+         Кубанская пицца
         </span>
       </div>
     </header>
 
     <nav id="menu">
-      <div class="container">
+      <div class="container text-center">
         <div class="row">
-            <a class="col-xs-6 col-md-4 bg-danger" href="#Hyperlink">Гиперссылки</a>
-            <a class="col-xs-6 col-md-4 bg-primary" href="#Table">Таблица</a>
-            <a class="col-xs-6 col-md-4 bg-secondary" href="#Form">Форма</a>
+            <a class="col-xs-6 col-md-3 bg-danger" href="#Hyperlink">Гиперссылки</a>
+            <a class="col-xs-6 col-md-3 bg-primary" href="#Table">Таблица</a>
+            <a class="col-xs-6 col-md-3 bg-secondary" href="#Form">Форма</a>
+            <a class="col-xs-6 col-md-3 bg-dark"href="#PizzaPrice">Пицца</a>
         </div>
       </div>
     </nav>
@@ -67,64 +69,53 @@
         <li><a href="firstWEB.html">Сокращенная ссылка на внутренюю</a></li>
       </ol>
     </div>
+    
         <div class="col-md-12" id="Table">
           <div class="col-sm-12">
             <h2>Таблица</h2>
             <table>
               <tr>
-                <th></th>
                 <th>
-                  Колонка 1
-                </th>
-                <th>
-                  Колонка 2
-                </th>
-                <th>
-                  Колонка 3
-                </th>
-              </tr>
-              <tr>
-                <th>
-                  Строка 1
-                </th>
-                <th>
-                  1.1
-                </th>
-                <th>
-                  1.2
-                </th>
-                <th>
-                  1.3
-                </th>
-              </tr>
-              <tr>
-                <th>
-                  Строка 2
-                </th>
-                <th colspan="2">
-                  2.1+2.2
-                </th>
-                <th>
-                  2.3
-                </th>
-              </tr>
-              <tr>
-                <th>
-                  Строка 3
-                </th>
-                <th>
-                  3.1
-                </th>
-                <th colspan="2">
-                  3.2+3.3
-                </th>
-              </tr>
-              <tr>
-                <th>
-                  Строка 4
+                  Название пиццы
                 </th>
                 <th colspan="3">
-                  4.1+4.2+4.3
+                  Добавки
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  Гавайская
+                </th>
+                <th>
+                  Сырный борт
+                </th>
+                <th colspan="2">
+                  Кетчунез
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  По нашему
+                </th>
+                <th>
+                  Оливье
+                </th>
+                <th>
+                  Мазик
+                </th>
+                <th>
+                  Кетчунез
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  Классическая
+                </th>
+                <th>
+                  Сырный борт
+                </th>
+                <th colspan="2">
+                  Кетчунез
                 </th>
               </tr>
             </table>
@@ -168,7 +159,85 @@
       </div>
     </div>
   </div>
+  <h2>Пицца</h2>
+  <div class="container justify-content-sm-center p=0 m=0" id="AboutUs">
+      <div>
+        <div id="PizzaDescription"  itemscope itemtype="http://schema.org/Offer">
+          <img itemprop="image" id="pizza" src="image.png" width="200" height="200" alt="image"/>
+          <span itemprop="name"><h2>Кубанская пицца</h2></span>
+          <p itemprop="description">Обычно люди приходят в Кубанскую Пиццу, чтобы просто поесть. Наши промоутеры раздают листовки про кусочек пиццы за двадцать рублей или ещё что-то выгодное. Мы делаем это как первый шаг, чтобы познакомиться.<br>
+              Но для нас Кубанская пицца — не только пицца. Это и пицца тоже, но в первую очередь это большое дело, которое вдохновляет нас, заставляет каждое утро просыпаться и с интересом продолжать работу.</p>
+        </div>
+     </div>
+  <h5>Колличество:<br></h5>
+  <input oninput="NewPrice()" type="number" id="PizzaQuantity" name="num" min="1" max="7" value="1">
+  <h5><br>Тип пиццы:</h5>
+  <form>
+    <select name="PizzaPrice">
+      <option value="1">Гавайская</option>
+      <option value="2">По нашему</option>
+      <option value="3">Классическая</option>
+    </select>
+    <div id="radios">
+      <label><input type="radio" name="prodOptions" value="option1"> Оливье</label>
+      <label><input type="radio" name="prodOptions" value="option2"> Мазик</label>
+      <label><input type="radio" name="prodOptions" value="option3"> Кетчунез</label>
     </div>
+    <div id="checkboxes">
+      <label><input type="checkbox" name="prop1"> Кетчунез</label>
+      <label><input type="checkbox" name="prop2"> Сырный борт</label>
+    </div>
+  </form>
+  <h5>Цена:</h5>
+  <div id="PizzaPrice"></div>
+  <h2>Отзывы о нас</h2>
+  <div class="text-center" id ="review">
+         <div itemscope itemtype="https://schema.org/Review">
+          <a href="https://www.the-village.ru/village/food/experiment-food/233357-pizza-check" itemprop="url">www.the-village.ru</a>
+          <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+            Автор: 
+           <span itemprop="name">Кристина Сафонова;</span></span>
+           <span itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
+           <meta itemprop="name" content="Вестник пиццы">
+           Издание:
+           <meta itemprop="address" content="Город">
+           "Вестник пиццы"; телефон:
+           <span itemprop="telephone">+7(800)123-45-67; </span>
+           </span>
+           <meta itemprop="datePublished" content="2019-11-28"> Опубликованно 27.11.2019;<br>
+           Рейтинг:
+           <span itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+             <span itemprop="ratingValue">3</span>
+           </span>
+           / 5;
+           <b>"<span itemprop="name">Ну такое</span>"</b>  
+           <div itemprop="reviewBody">Твёрдая подгоревшая корочка. Начинка странная — не люблю халапеньо. В целом не очень.
+           </div>
+           <div itemscope itemtype="https://schema.org/Review">
+            <a href="https://www.the-village.ru/village/food/experiment-food/233357-pizza-check" itemprop="url">www.the-village.ru</a>
+            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+              Автор: 
+             <span itemprop="name">Юрий Болотов;</span></span>
+             <span itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
+             <meta itemprop="name" content="Пицца сегодня">
+             Издание:
+             <meta itemprop="address" content="Город">
+             "Пицца сегодня"; телефон:
+             <span itemprop="telephone">+7(800)555-35-35; </span>
+             </span>
+             <meta itemprop="datePublished" content="2019-11-28"> Опубликованно 28.11.2019;<br>
+             Рейтинг:
+             <span itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+               <span itemprop="ratingValue">5</span>
+             </span>
+             / 5;
+             <b>"<span itemprop="name">Не пицца-шедевр!!!</span>"</b>  
+             <div itemprop="reviewBody">Очень нежная пицца и приятный аромат базилика. Я живу рядом с Кубанской пиццей, но туда не хожу — теперь буду!!!
+             </div>
+     </div>
+    </div>
+  </div>
+  </div>
   <footer class="container-fluid p-0 m-0">
     <div class="container">
         Задизайнено студией Евгения Хижнего

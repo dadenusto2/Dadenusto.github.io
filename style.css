@@ -13,6 +13,14 @@ header{
 header div a{
     font-size:40px;
 }
+#pizza{
+    float:left;
+    display: block;
+}
+#PizzaDescription{
+    width:100%;
+    font-size: 27px;
+}
 #image{
     float:left;
 }
