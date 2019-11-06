@@ -40,7 +40,7 @@ header div a{
 #Hyperlink a:hover{
     color: rgb(66, 126, 84);
 }
-#Hyperlink, #Form, #Table {
+#Hyperlink, #Form, #Table, #PizzaPrice, #PizzaDescription, #review, #Adress, #AboutUs, #Calculator  {
     background-color: rgb(220, 185, 240);
 }
 table{
