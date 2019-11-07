@@ -1,0 +1,82 @@
+body{
+    outline: none;
+    font-family: Andale Mono, monospace;
+    background-image: url(background.jpeg);
+    margin: auto 0 auto auto
+}
+header{
+    background-color: #007241;
+    font-family: Bradley Hand, cursive;
+    font-size: 35px;
+    color:rgb(206, 168, 44);
+    height: auto;
+}
+header img{
+    min-height: 100px;
+    display: table-cell;
+    vertical-align: middle
+}
+header div a{
+    font-size:40px;
+}
+h2{
+  font-style:italic;
+  font-weight:900;
+}
+#pizza{
+    float:left;
+    display: block;
+}
+#PizzaDescription{
+    width:100%;
+    font-size: 27px;
+}
+#image{
+    float:left;
+}
+#menu{
+    font-size: 30px;
+}
+#menu div div a{
+    color:#ecc132;
+}
+#menu div div a:hover{
+    color: #4448da;
+  
+}
+#all {
+    background-color: rgb(220, 185, 240, 0.93);
+}
+table{
+    border-collapse: separate;
+    table-layout: auto;
+    width:100%;
+  
+}
+table tr,th{
+    padding: 30px;
+    height: 100;
+    border: 4px solid white;
+    background-color:black;
+}
+table th{
+    border: 3px solid #645111;
+    padding: 30px;
+    background-color:#abf097;
+    text-align:center;
+}
+table tr{
+    border: 3px solid #1e5b64;
+    padding: 30px;
+    background-color:#8ef0c6;
+    text-align:center;
+}
+footer{
+    width: 100%;
+    margin: 0%;
+    background-color: #007241;
+    color:rgb(206, 168, 44);
+    font-size: 18px;
+    margin:0 auto;
+    order: 3;
+}
