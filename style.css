@@ -53,6 +53,7 @@ caption {
      caption-side: top;
      text-align:center;
      font-size: 35px;
+     text-color: black;
     }
 table tr,th{
     padding: 30px;
