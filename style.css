@@ -49,6 +49,11 @@ table{
     width:100%;
   
 }
+caption { 
+     caption-side: top;
+     text-align:center;
+     font-size: 35px;
+    }
 table tr,th{
     padding: 30px;
     height: 100;
