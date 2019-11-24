@@ -63,44 +63,44 @@ li.nav-item.nodrop ul{
     font-weight: normal;
     font-style: normal;
 }
-.Affordable_TVs {
+#Affordable_TVs {
     background: url(./img/index.jpg) no-repeat;
     background-size: 900pt, auto;
     background-position: center;
     font-weight: 600;
 }
-.Affordable_TVs  .text-info{
+#Affordable_TVs  .text-info{
     font-size: 21px;
     margin:0px 20px 0px;
 }
 
-.Affordable_TVs  h2, h5{
+#Affordable_TVs  h2, h5{
     margin: 0 20px;
     line-height: 1;
     font-weight: 900;
 }
-.Affordable_TVs  img{
+#Affordable_TVs  img{
     border-radius: 7px;
 }
-.Affordable_TVs  table{
+#Affordable_TVs  table{
     margin: 40px 20px;
     border-spacing: 100px, 100px;
 }
-.Affordable_TVs  table a{
+#Affordable_TVs  table a{
     text-decoration: none;
 }
-.Affordable_TVs  table td{
+#Affordable_TVs  table td{
     margin: 0 0 0 0;
     padding: 10px 6px;
     line-height: 1;
     text-align: left;
 }
-.Affordable_TVs  table td{
+#Affordable_TVs  table td{
     font-weight: 400;
     font-size: 22px;
     margin: 0;
 }
-.Affordable_TVs  table .text-info{
+#Affordable_TVs  table .text-info{
     font-weight: 900;
     font-size: 25px;
     margin: 0;
@@ -517,8 +517,8 @@ span.sim-dot, span.sim-dot2, span.sim-dot3{
     }
 }
   @media (max-width: 425px){
-    .Affordable_TVs {
-        background: url(index-s.jpg) no-repeat;
+    #Affordable_TVs {
+        background: url(./img/index-s.jpg) no-repeat;
     }
     .sim-slider, .sim-slider2, .sim-slider3, .sim-slider4{
         padding: 0px 0px 0px 64px;
@@ -676,8 +676,8 @@ span.sim-dot, span.sim-dot2, span.sim-dot3{
 
 }
   @media (max-width: 320px){
-    .Affordable_TVs {
-        background: url(index-xs.jpg) no-repeat;
+    #Affordable_TVs {
+        background: url(./img/index-xs.jpg) no-repeat;
     } 
     .sim-slider, .sim-slider2, .sim-slider3 {
         padding: 0px 0px 0px 48px;
@@ -726,7 +726,7 @@ span.sim-dot, span.sim-dot2, span.sim-dot3{
         position: relative; /* for IE 6 */
         width:320px !important;
         margin:10px 0;
-    }.Affordable_TVs  .text-info {
+    }#Affordable_TVs  .text-info {
         font-size: 19px;
         margin: 0px 20px 0px;
     }
