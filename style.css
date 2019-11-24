@@ -64,7 +64,7 @@ li.nav-item.nodrop ul{
     font-style: normal;
 }
 .Affordable_TVs {
-    background: url(../img/index.jpg) no-repeat !important;
+    background: url(./img/index.jpg) no-repeat !important;
     background-size: 900pt, auto;
     background-position: center;
     font-weight: 600;
