@@ -3,7 +3,58 @@ body{
     font-family: 'Uni Sans Semibold' ;
     margin: auto auto;
 }
-@font-face {
+a{
+    font-family: 'Uni Sans Semibold' ;  
+}
+.navbar{
+    padding:8
+}
+.navbar-dark .navbar-toggler {
+    color: rgba(2, 2, 2, 0.5) !important;
+    border-color: rgba(255,255,255,.1) !important;
+}
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.dropdown-toggle::after {
+    margin-left: 0;
+}
+.dropdown-menu{
+    padding: 0px !important;
+    width: 150px;
+    border: 0px solid rgba(0,0,0,.15)!important ;
+}
+.dropdown-menu a{
+    color: black
+}
+.dropdown-menu ul{
+    padding: 0px 0px 0px 7px;
+}
+a.nan-link{
+    color:black;
+
+}
+.dropdown-menu li.nav-item, .dropdown-menu li a.nav-link{
+    padding: 0px !important;
+}
+.nav-link.dropdown-toggle{
+    padding: 0px !important;
+}
+li.nav-item.nodrop a{
+    color:black;
+}
+li.nav-item.nodrop a.nav-link{
+    padding: 0px;
+    color: black;
+}
+li.nav-item.nodrop ul{
+    padding:0px 0px 0px 10px;
+}
+@font-face{
     font-family: 'Uni Sans Semibold';
     src: url('UniSansSemiBold.eot');
     src: url('UniSansSemiBold.eot?#iefix') format('embedded-opentype'),
@@ -13,14 +64,14 @@ body{
     font-style: normal;
 }
 #Affordable_TVs{
-    background: url(img/index-m.jpg) no-repeat;
+    background: url(index.jpg) no-repeat;
     background-size: 900pt, auto;
     background-position: center;
     font-weight: 600;
 }
 #Affordable_TVs .text-info{
     font-size: 21px;
-    margin:40px 20px 0px;
+    margin:0px 20px 0px;
 }
 
 #Affordable_TVs h2, h5{
@@ -58,21 +109,15 @@ body{
     margin: 0 20px;
     line-height: 1;
 }
-#bath_gallery, #kitc_gallery, #mir_gallery{
+#bath_gallery, #kitc_gallery, #mir_gallery, #cer_galler{
     background: linear-gradient(to top, rgb(192, 191, 191) 0%, white 50%, rgb(192, 191, 191) 100%);
+}
+
+li.nav-item table td a{
+    color: black;
 }
 .col-6.col-md-1.text-center{
     padding: 5px 0px;
-}
-.backpopup{
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    opacity: 0.7;
-    top: 0;
-    left: 0;
-    z-index: 400;
-    cursor: pointer;
 }
 .row .where{
     text-align: center;
@@ -110,9 +155,26 @@ body{
     animation-name: slideDown;
     font-size: 15px;
 }
+.center a {
+    display: block;
+    font-size: 20px;
+    font-weight: 600px;
+    color: white;
+}
+.center{
+    background-color: red; 
+    text-align: top;
+    border-radius: 35px;
+    height: 40px;
+    width: 700px;
+}
 #bathroom td, tr{
     vertical-align: center;
 }
+.center, .center-align {
+    text-align: center;
+}
+
 .text-center{
     vertical-align: top;
     font-size: 7px;
@@ -246,7 +308,8 @@ footer .text-center{
 }
 footer img:not([alt]){
     background-color: white;
-    border-radius: 30px;
+    border-radius: 10px;
+    margin-top:10px;
 }
 footer{
     position: relative;
@@ -290,35 +353,62 @@ footer a:not([target]){
 footer a img:hover, active {
     filter: none;
 }
-.sim-slider, .sim-slider2, .sim-slider3 {
+.sim-slider, .sim-slider2, .sim-slider3, .sim-slider4 {
     max-width: 1000px;
     min-width: 320px;
+    height: auto;
     margin: 20px auto;
     padding: 0px 0px 0px 150px;
     background-color: rgba(0, 120, 201, 0);
-  }
-
-  
+}
+  .slider-title {
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #888770;
+}
+.slider-title2 {
+    display: inline-block;
+    text-align: left;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: black;
+}
+    .slider-title2 .large {
+    font-size: 36px;
+    font-weight: 700;
+}
+.slider-title .large {
+    font-size: 26px;
+}
   /* General styles */
-  .sim-slider, .sim-slider2, .sim-slider3 {
+.sim-slider, .sim-slider2, .sim-slider3, .sim-slider4{
     position: relative;
-  }
-  
-  .sim-slider-list, .sim-slider-list2, .sim-slider-list3 {
+}
+
+.sim-slider-list, .sim-slider-list2, .sim-slider-list3, .sim-slider-list4{
     margin: 0;
     padding: 0;
     list-style-type: none;
     position: relative;
-    height: 430px;
+    height: 450px;
     width: 720px;
     background-color: rgba(0, 120, 201, 0);   
-
-  }
-  .sim-slider-list img, .sim-slider-list2 img, .sim-slider-list3 img {
+}
+.sim-slider-list img, .sim-slider-list2 img, .sim-slider-list3 img{
     height: 400px;
     width: 700px;
-  }
-  .sim-slider-element, .sim-slider-element2, .sim-slider-element3 {
+}
+.sim-slider-list4 img {
+    height: 355px;
+    width: 255px;
+}
+.sim-slider-element, .sim-slider-element2, .sim-slider-element3, .sim-slider-element4{
     width: 100%;
     opacity: 0;
     position: absolute;
@@ -327,43 +417,47 @@ footer a img:hover, active {
     left: 0;
     top: 0;
     display: block;
-  }
-  
-  /* Navigation item styles */
-  div.sim-slider-arrow-left, div.sim-slider-arrow-right,
-  div.sim-slider-arrow-left2, div.sim-slider-arrow-right2,
-  div.sim-slider-arrow-left3, div.sim-slider-arrow-right3 {
+}
+.sim-slider-element4{
+    left: 250px;    
+}
+
+/* Navigation item styles */
+div.sim-slider-arrow-left, div.sim-slider-arrow-right,
+div.sim-slider-arrow-left2, div.sim-slider-arrow-right2,
+div.sim-slider-arrow-left3, div.sim-slider-arrow-right3,
+div.sim-slider-arrow-left4, div.sim-slider-arrow-right4 {
     width: 22px;
     height: 40px;
     position: absolute;
     cursor: pointer;
     opacity: 0.6;
     z-index: 4;
-  }
-  
-  div.sim-slider-arrow-left, div.sim-slider-arrow-left2, div.sim-slider-arrow-left3 {
+}
+
+div.sim-slider-arrow-left, div.sim-slider-arrow-left2, div.sim-slider-arrow-left3, div.sim-slider-arrow-left4{
     left: 10px;
     top: 40%;
     display: block;
     background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat;
-  }
-  
-  div.sim-slider-arrow-right, div.sim-slider-arrow-right2, div.sim-slider-arrow-right3 {
+}
+
+div.sim-slider-arrow-right, div.sim-slider-arrow-right2, div.sim-slider-arrow-right3, div.sim-slider-arrow-right4{
     right: 10px;
     top: 40%;
     display: block;
     background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat;
-  }
-  
-  div.sim-slider-arrow-left:hover, div.sim-slider-arrow-left2:hover, div.sim-slider-arrow-left3:hover {
+}
+
+div.sim-slider-arrow-left:hover, div.sim-slider-arrow-left2:hover, div.sim-slider-arrow-left3:hover, div.sim-slider-arrow-left4:hover{
     opacity: 1.0;
-  }
-  
-  div.sim-slider-arrow-right:hover, div.sim-slider-arrow-right2:hover, div.sim-slider-arrow-right3:hover {
-    opacity: 1.0;
-  }
-  
-  div.sim-slider-dots, div.sim-slider-dots2, div.sim-slider-dots3 {
+}
+
+div.sim-slider-arrow-right:hover, div.sim-slider-arrow-right2:hover, div.sim-slider-arrow-right3:hover, div.sim-slider-arrow-right4:hover{
+    opacity: 1.0;   
+}
+
+div.sim-slider-dots, div.sim-slider-dots2, div.sim-slider-dots3 {
     width: 100%;
     height: auto;
     position: absolute;
@@ -371,9 +465,10 @@ footer a img:hover, active {
     bottom: 0;
     z-index: 3;
     text-align: center;
-  }
-  
-  span.sim-dot, span.sim-dot2, span.sim-dot3{
+    bottom:50px;
+}
+
+span.sim-dot, span.sim-dot2, span.sim-dot3{
     width: 10px;
     height: 10px;
     margin: 5px 7px;
@@ -382,14 +477,14 @@ footer a img:hover, active {
     background-color: #BBB;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  @media (max-device-width: 480px){
-    #imageimg{
-      height:120px;
-      width: 120px;
-    }
-  }
+}
+
+@media (max-device-width: 480px){
+#imageimg{
+    height:120px;
+    width: 120px;
+}
+}
   
 @media (min-width: 768px) {
     footer .col-12, .col-6 {
@@ -399,29 +494,44 @@ footer a img:hover, active {
      footer .col-12.col-md-4:not([id]) {
         text-align: right;
         vertical-align: top;
-    }  
-  }
-  @media (max-width: 320px){
-  .image p{
-    height: 160px;
-    width: 160px;
-    font-weight: 200;
+    } 
+    #navbardrop {
+        background-color:rgb(70, 172, 164);;
+        color: white !important;
+        margin: 28px 5px;
+        border-radius: 20px;
+        text-align: center;
+        width: 90px;
     }
-    .image img{
-        height: 160px;
-        width: 160px;
+    .nav-item.nodrop{
+        visibility: hidden;
+        display: none;
     }
-    .responsive-img{
-        height: 160px;
-        width: 160px;
+    .loc2, .nav-item2{
+        visibility: hidden;
+        display: none;
     }
-  }
+    ul.navbar-nav li.nav-item1 table td a{
+        color:rgb(70, 172, 164);
+    }
+    
+    .navbar ul li.loc1{
+        margin: 25px 0 0 250px;
+        vertical-align: middle;
+    }
+    .navbar ul li.loc11, .navbar ul li.loc12{
+        margin: 25px 0 0 20px;
+    }
+}
   @media (max-width: 425px){
-    .sim-slider, .sim-slider2, .sim-slider3 {
+    #Affordable_TVs{
+        background: url(index-s.jpg) no-repeat;
+    }
+    .sim-slider, .sim-slider2, .sim-slider3, .sim-slider4{
         padding: 0px 0px 0px 64px;
       }
        
-    .sim-slider-element, .sim-slider-element2, .sim-slider-element {
+    .sim-slider-element, .sim-slider-element2, .sim-slider-element3, .sim-slider-element4{
         width: 100%;
         opacity: 0;
         position: absolute;
@@ -431,24 +541,89 @@ footer a img:hover, active {
         top: 0;
         display: block;
     }
-    .sim-slider-list, .sim-slider-list2, .sim-slider-list3 {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    position: relative;
-    height: 194px;
-    width: 331px;
+    .nav-item.dropdown, .nav-item1, .loc1, .navbar ul li.loc11, .navbar ul li.loc12{
+        visibility: hidden;
+        display: none;
+    }
+    .loc2{
+        margin:10px 0;
+        text-align: center;
+    }
+    .sim-slider-list, .sim-slider-list2, .sim-slider-list3, .sim-slider-list4{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        position: relative;
+        height: 194px;
+        width: 331px;
     }
     .sim-slider-list img, .sim-slider-list2 img, .sim-slider-list3 img {
-    height: 169px;
-    width: 297px;
+        height: 169px;
+        width: 297px;
+    }
+    .sim-slider-list4 img {
+        height: 178px;
+        width: 120px;
+    }
+    .center a {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+    }
+    .center{
+        background-color: red; 
+        text-align: top;
+        border-radius: 20px;
+        height: 40px;
+        width: 297px;
+        bottom: 30px;
+    }
+    div.sim-slider-dots, div.sim-slider-dots2, div.sim-slider-dots3 {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+        text-align: center;
+        bottom:35px;
+    }
+    
+    ul.navbar-nav li.nav-item2 a{
+        color:black;
+    }
+    
+    .slider-title2 {
+        display: inline-block;
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1;
+        text-transform: uppercase;
+        color: black;
+    }
+        .slider-title2 .large {
+        font-size: 26px;
+        font-weight: 700;
+    }
+    #map_content{
+        position: relative; /* for IE 6 */
+        width:425px !important;
+        margin:10px 0;
+    }
+    .image p{
+        left:21px;
     }
   }
   @media (max-width: 375px){
+    .image p{
+        left: 9px;
+        }
     .sim-slider, .sim-slider2, .sim-slider3 {
         padding: 0px 0px 0px 39px;
       }  
-      .sim-slider-element, .sim-slider-element2, .sim-slider-element {
+      .sim-slider-element, .sim-slider-element2, .sim-slider-element3 {
         width: 100%;
         opacity: 0;
         position: absolute;
@@ -463,15 +638,54 @@ footer a img:hover, active {
         padding: 0;
         list-style-type: none;
         position: relative;
-        height: 200px;
+        height: 190px;
         width: 306px;
+        top:10px;
     }
     .sim-slider-list img, .sim-slider-list2 img, .sim-slider-list3 img {
         height: 149px;
         width: 262x;
     }
+    .center a {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+    }
+    .center{
+        background-color: red; 
+        text-align: top;
+        border-radius: 20px;
+        height: 40px;
+        width: 297px;
+        bottom: 20px;
+    }
+    div.sim-slider-dots, div.sim-slider-dots2, div.sim-slider-dots3 {
+        bottom:40px;
+    }
+    .prev, .next {
+        position: absolute;
+        top: 30%;
+        font-size: 30px;
+        z-index: 1;
+        cursor: pointer;
+      }
+      
+      .next {
+        right: 0;
+      }
+      
+    #map_content{
+        position: relative; /* for IE 6 */
+        width:375px !important;
+        margin:10px 0;
+    }
+
 }
-  @media (max-width: 320px){ 
+  @media (max-width: 320px){
+    #Affordable_TVs{
+        background: url(index-xs.jpg) no-repeat;
+    } 
     .sim-slider, .sim-slider2, .sim-slider3 {
         padding: 0px 0px 0px 48px;
       }  
@@ -497,4 +711,42 @@ footer a img:hover, active {
         height: 128px;
         width: 224px;
     }
+    
+    .center a {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+    }
+    .center{
+        background-color: red; 
+        text-align: top;
+        border-radius: 20px;
+        height: 40px;
+        width: 224px;
+        bottom: 20px;
+    }
+    div.sim-slider-dots, div.sim-slider-dots2, div.sim-slider-dots3 {
+        bottom:34px;
+    }
+    #map_content{
+        position: relative; /* for IE 6 */
+        width:320px !important;
+        margin:10px 0;
+    }#Affordable_TVs .text-info {
+        font-size: 19px;
+        margin: 0px 20px 0px;
+    }
+    .image p{
+        height: 150px;
+        width: 150px;
+        font-weight: 200;
+        left: 5px;
+    }
+    .image img, .responsive-img{
+
+        height: 150px;
+        width: 150px;
+        padding:0px;
+    }  
 }
